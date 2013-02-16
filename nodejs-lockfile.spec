@@ -1,13 +1,13 @@
 %define		pkg	lockfile
 Summary:	logger for npm
 Name:		nodejs-%{pkg}
-Version:	0.2.1
+Version:	0.3.0
 Release:	1
 License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/lockfile
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	31a483ca8c0f1a8ed4cf2a3efe0a08ac
+# Source0-md5:	2e298908fedb5e10bfe238dab8f7dc26
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 BuildArch:	noarch
