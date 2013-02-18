@@ -1,5 +1,5 @@
 %define		pkg	lockfile
-Summary:	logger for npm
+Summary:	A very polite lock file utility
 Name:		nodejs-%{pkg}
 Version:	0.3.0
 Release:	1
@@ -14,7 +14,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-logger for npm.
+A very polite lock file utility, which endeavors to not litter, and
+to wait patiently for others.
 
 %prep
 %setup -qc
