@@ -1,13 +1,13 @@
 %define		pkg	lockfile
 Summary:	A very polite lock file utility
 Name:		nodejs-%{pkg}
-Version:	0.4.2
+Version:	1.0.0
 Release:	1
 License:	MIT
 Group:		Development/Libraries
-URL:		https://github.com/isaacs/lockfile
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	a30028afae8bdfc4752b0a0c5f4ac4fb
+# Source0-md5:	e06bd7199bd7d887527843f036df8de1
+URL:		https://github.com/isaacs/lockfile
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 BuildArch:	noarch
@@ -24,7 +24,7 @@ mv package/* .
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{nodejs_libdir}/%{pkg}
-cp -a package.json %{pkg}.js $RPM_BUILD_ROOT%{nodejs_libdir}/%{pkg}
+cp -p package.json %{pkg}.js $RPM_BUILD_ROOT%{nodejs_libdir}/%{pkg}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
